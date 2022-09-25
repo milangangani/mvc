@@ -1,0 +1,21 @@
+<form method="post" action="/admin/updateData">
+    <input type="hidden" value="<%= single.id %>" name="id"/>
+    <table border="1">
+        <tr>
+            <td>Name :-</td>
+            <td><input type="text" value="<%= single.name %>" name="name"/></td>
+        </tr>
+        <tr>
+            <td>Email :-</td>
+            <td><input type="text" value="<%= single.email %>" name="email"/></td>
+        </tr>
+        <tr>
+            <td>Password :-</td>
+            <td><input type="text" value="<%= single.password %>" name="password"/></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="submit"/></td>
+        </tr>
+    </table>
+</form>

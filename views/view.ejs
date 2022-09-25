@@ -1,0 +1,25 @@
+<table border="1">
+    <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Password</th>
+        <th>Action</th>
+    </tr>
+
+
+    <% for(let i in record) { %>
+        <tr>
+            <td><%= record[i].name %></td>
+            <td><%= record[i].email %></td>
+            <td><%= record[i].password %></td>
+            <td>
+                <a href="/admin/deleteData/<%= record[i].id %>">Delete</a> ||
+                <a href="/admin/editData/<%= record[i].id %>">Edit</a>
+            </td>
+        </tr>
+
+    <% } %>
+   
+</table>
+
+<a href="/admin">Add</a>
